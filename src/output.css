@@ -600,6 +600,26 @@ video {
   position: relative;
 }
 
+.-left-5 {
+  left: -1.25rem;
+}
+
+.-top-12 {
+  top: -3rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -653,6 +673,18 @@ video {
   height: 100%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -684,12 +716,12 @@ video {
   align-items: center;
 }
 
-.gap-4 {
-  gap: 1rem;
+.justify-center {
+  justify-content: center;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .self-end {
@@ -826,7 +858,8 @@ video {
 }
 
 .custom-bg {
-  background-image: url(img/shape-08.svg);
+  background-image: url(img/shape-04.svg);
+  background-size: cover;
 }
 
 .hover\:opacity-80:hover {
@@ -837,6 +870,24 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:-top-24 {
+    top: -6rem;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {

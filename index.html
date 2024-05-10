@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Hero section start -->
-    <section id="home" class="pt-24">
+    <section id="home" class="pt-24 custom-bg">
       <div class="container">
         <div class="flex flex-wrap mb-4">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -37,7 +37,7 @@
           <div class="hidden lg:block self-end px-4 lg:w-1/2">
             <div class="flex items-center">
               <img
-                src="src/img/hero.png"
+                src="src/img/hero3.jpg"
                 alt="hero image"
                 class="mx-auto"
               />
@@ -52,17 +52,20 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="px-4 mb-10 lg:w-1/2">
-            <div class="grid grid-cols-2 gap-4 items-center">
-              <div class="flex flex-col gap-4">
+            <div class="grid grid-cols-2 gap-4 items-center relative">
+              <div class="flex flex-col gap-4 relative">
+                <img src="src/img/shape-01.svg" alt="shape" class="absolute top-5 -left-5 w-6 md:w-9">
                 <img src="src/img/ilustrasi2.jpeg" alt="about" class="w-full rounded-xl"/>
                 <img src="src/img/ilustrasi3.jpeg" alt="about" class="w-full rounded-xl"/>
               </div>
-              <div>
+              <div class="flex flex-col relative">
                 <img src="src/img/ilustrasi1.jpeg" alt="about" class="w-full rounded-xl"/>
+                <img src="src/img/shape-02.svg" alt="shape" class="absolute w-5 -top-12 md:w-10 md:-top-24">
               </div>
+              <img src="src/img/shape-03.svg" alt="shape" class="absolute w-20 right-4 bottom-0 md:right-15 md:w-1/3">
             </div>
           </div>
-          <div class="w-full px-4 lg:px-10 lg:w-1/2">
+          <div class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2">
             <h4 class="font-medium text-primary">About us</h4>
             <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
               Make your message secrets here!
@@ -72,7 +75,7 @@
               Praesentium quisquam odio commodi voluptatibus provident tempora
               omnis?
             </p>
-            <a href="#" class="flex items-center">
+            <a href="#" class="flex items-center" onclick="alert('Comming Soon'); return false">
               <span class="relative flex mr-5">
                 <span class="p-3 animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
                 <span class="p-3 relative inline-flex rounded-full bg-primary">
@@ -80,8 +83,7 @@
                 </span>
               </span>
               <span class="text-secondary font-medium">SEE THE TUTORIAL</span>
-              </a
-          >
+              </a>
         </div>
           </div>
         </div>

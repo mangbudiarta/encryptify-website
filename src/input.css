@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .custom-bg {
-  background-image: url(img/shape-08.svg);
+  background-image: url(img/shape-04.svg);
+  @apply bg-cover;
 }
