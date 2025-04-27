@@ -1,561 +1,503 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encryptify - Make Your Text Secure</title>
-    <link rel="stylesheet" href="./src/output.css" />
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./src/img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./src/img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./src/img/favicon/site.webmanifest" />
-    <link
-      rel="shortcut icon"
-      href="./src/img/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
 
-  <body class="relative">
-    <nav class="bg-white fixed w-full z-20" id="nav-menu">
-      <div class="container max-w-6xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between h-16 items-center">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-              <a href="#">
-                <img
-                  src="src/img/logo.png"
-                  alt="Logo"
-                  class="h-8 w-auto object-contain"
-                />
-              </a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encryptify - Make Your Text Secure</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./src/img/favicon/site.webmanifest" />
+  <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" type="image/x-icon" />
+</head>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-6 items-center">
-              <a href="#home" class="nav-link text-gray-700 hover:text-primary"
-                >Home</a
-              >
-              <a
-                href="#features"
-                class="nav-link text-gray-700 hover:text-primary"
-                >Features</a
-              >
-              <a href="#works" class="nav-link text-gray-700 hover:text-primary"
-                >How It Works</a
-              >
-              <a
-                href="#encrypt"
-                class="text-base font-semibold text-white bg-primary py-2 px-4 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-                >Encrypt Now</a
-              >
-            </div>
-
-            <!-- Mobile menu button -->
-            <div class="md:hidden">
-              <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-                <!-- Menu Icon (☰) -->
-                <svg
-                  id="icon-menu"
-                  class="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-
-                <!-- Close Icon (X) -->
-                <svg
-                  id="icon-close"
-                  class="h-6 w-6 hidden"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-          <a href="#home" class="block nav-link text-gray-700 hover:text-primary"
-            >Home</a
-          >
-          <a href="#features" class="block nav-link text-gray-700 hover:text-primary"
-            >Features</a
-          >
-          <a href="#works" class="block nav-link text-gray-700 hover:text-primary"
-            >How It Works</a
-          >
-          <a
-            href="#encrypt"
-            class="block text-white text-center py-1 px-4 bg-primary rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-            >Encrypt Now</a
-          >
-        </div>
-      </div>
-    </nav>
-    <!-- Hero section start -->
-    <section id="home" class="pt-24 custom-bg">
-      <div class="container max-w-6xl">
-        <div class="flex flex-wrap mb-4">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl">
-              Keep <span class="text-primary">Secure</span> Safe, Share
-              Confidently
-            </h1>
-
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
-              Confidential messaging made simple. Trust our encryption for peace
-              of mind in every conversation. Encrypt it now!
-            </p>
-            <div class="flex flex-wrap">
-              <a
-                href="#encrypt"
-                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mr-2 mb-2"
-                >Encrypt Now</a
-              >
-              <a
-                href="#about"
-                class="text-base font-semibold text-primary border-primary border py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-2"
-                >Read more</a
-              >
-            </div>
-          </div>
-          <div class="hidden lg:block self-end px-4 lg:w-1/2">
-            <div class="flex items-center">
-              <img src="src/img/hero.png" alt="hero image" class="mx-auto" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hero section end -->
-    <!-- About section start -->
-    <section id="about" class="pt-24 pb-24 about-bg">
-      <div class="container max-w-6xl">
-        <div class="flex flex-wrap">
-          <div class="px-4 mb-10 lg:w-1/2">
-            <div class="grid grid-cols-2 gap-4 items-center relative">
-              <div class="flex flex-col gap-4 relative">
-                <img
-                  src="src/img/shape-01.svg"
-                  alt="shape"
-                  class="absolute top-5 -left-5 w-6 md:w-9"
-                />
-                <img
-                  src="src/img/ilustrasi2.jpeg"
-                  alt="about"
-                  class="w-full rounded-xl"
-                />
-                <img
-                  src="src/img/ilustrasi3.jpeg"
-                  alt="about"
-                  class="w-full rounded-xl"
-                />
-              </div>
-              <div class="flex flex-col relative">
-                <img
-                  src="src/img/ilustrasi1.jpeg"
-                  alt="about"
-                  class="w-full rounded-xl"
-                />
-                <img
-                  src="src/img/shape-02.svg"
-                  alt="shape"
-                  class="absolute w-5 -top-12 md:w-10 md:-top-24"
-                />
-              </div>
-              <img
-                src="src/img/shape-03.svg"
-                alt="shape"
-                class="absolute w-20 right-4 bottom-0 md:right-15 md:w-1/3"
-              />
-            </div>
-          </div>
-          <div
-            class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2"
-          >
-            <h4 class="font-medium text-primary">About us</h4>
-            <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
-              Make your message secrets here!
-            </h2>
-            <p class="text-secondary mb-5">
-              We provide a simple, secure way to encode and protect your
-              messages. Our platform ensures that your communications stay
-              private, making it easier for you to share information with
-              confidence, whether for fun or basic privacy.
-            </p>
-            <a
-              href="javascript:void(0)"
-              class="flex items-center"
-              onclick="showModalTotorial()"
-            >
-              <span class="relative flex mr-5">
-                <span
-                  class="p-3 animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"
-                ></span>
-                <span class="p-3 relative inline-flex rounded-full bg-primary">
-                  <img src="src/img/icon-play.svg" alt="play" />
-                </span>
-              </span>
-              <span class="text-secondary font-medium">SEE THE TUTORIAL</span>
+<body class="relative">
+  <nav class="bg-white fixed w-full z-20" id="nav-menu">
+    <div class="container max-w-6xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#">
+              <img src="src/img/logo.png" alt="Logo" class="h-8 w-auto object-contain" />
             </a>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Features section start -->
-    <section id="features" class="pt-24 pb-24 features-bg bg-green-50">
-      <div class="container max-w-6xl">
-        <div class="lg:flex flex-wrap">
-          <div
-            class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2"
-          >
-            <h4 class="font-medium text-primary">Features</h4>
-            <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
-              We Provide Amazing <span class="text-primary">Security</span> &
-              Simplicity
-            </h2>
-            <p class="text-secondary mb-5">
-              Experience powerful text encryption made simple. No login, no
-              complexity—just fast, secure communication at your fingertips.
-            </p>
-            <img
-              src="./src/img/plane.svg"
-              alt="shape-plane"
-              class="w-1/2 ml-auto hidden lg:block"
-            />
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="#home" class="nav-link text-gray-700 hover:text-primary">Home</a>
+            <a href="#features" class="nav-link text-gray-700 hover:text-primary">Features</a>
+            <a href="#works" class="nav-link text-gray-700 hover:text-primary">How It Works</a>
+            <a href="#encrypt"
+              class="text-base font-semibold text-white bg-primary py-2 px-4 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Encrypt
+              Now</a>
           </div>
 
-          <!-- Features Grid -->
-          <div class="px-4 mb-10 lg:w-1/2">
-            <div class="grid grid-cols-2 gap-4 auto-rows-[minmax(100px,auto)]">
-              <!-- Card 1-->
-              <div class="col-span-2 bg-white p-6 rounded-xl shadow-md">
-                <div class="text-4xl mb-2">🔒</div>
-                <h3 class="text-lg font-semibold mb-1">Secure Encryption</h3>
-                <p class="text-secondary text-sm">
-                  Protect your messages with simple encoding—lightweight,
-                  effective for basic privacy.
-                </p>
-              </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <!-- Menu Icon (☰) -->
+              <svg id="icon-menu" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
 
-              <!-- Card 2 -->
-              <div
-                class="bg-white p-5 rounded-xl shadow-md flex flex-col md:flex-row gap-3"
-              >
-                <div class="text-3xl">⚡</div>
-                <div>
-                  <h3 class="font-semibold text-base mb-1">Fast & Instant</h3>
-                  <p class="text-secondary text-sm">
-                    Real-time results—no hassle.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div
-                class="bg-white p-5 rounded-xl shadow-md flex flex-col md:flex-row gap-3"
-              >
-                <div class="text-3xl">🔄</div>
-                <div>
-                  <h3 class="font-semibold text-base mb-1">Two-Way</h3>
-                  <p class="text-secondary text-sm">
-                    Encrypt and decrypt anytime.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Card 4 -->
-              <div
-                class="col-span-2 bg-white p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-3"
-              >
-                <div class="text-3xl">🧩</div>
-                <div>
-                  <h3 class="text-lg font-semibold mb-1">
-                    No Account Required
-                  </h3>
-                  <p class="text-secondary text-sm">
-                    No login needed—just start using it.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- How it Works section start -->
-    <section id="works" class="pt-24 pb-24 works-bg">
-      <div class="container max-w-6xl">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:px-10 text-center">
-            <h4 class="font-medium text-primary">How it Works</h4>
-            <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
-              Easy and Secure Messaging
-            </h2>
-            <p class="text-secondary mb-5">
-              Follow a few easy steps to keep your messages private and
-              protected. No complicated setup—just a fast and secure way to
-              encode what matters to you.
-            </p>
-          </div>
-        </div>
-
-        <div class="container max-w-6xl relative">
-          <!-- vertical center line -->
-          <div
-            class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-primary"
-          ></div>
-
-          <!-- Timeline item (LEFT) -->
-          <div class="mb-10 flex justify-center items-center w-full">
-            <div class="w-5/12">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                1. Choose Your Mode
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Select whether you want to encrypt or decrypt your message—it's
-                quick and simple.
-              </p>
-            </div>
-            <div
-              class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"
-            ></div>
-            <div class="w-5/12"></div>
-          </div>
-
-          <!-- Timeline item (RIGHT) -->
-          <div class="mb-10 flex justify-center items-center w-full">
-            <div class="w-5/12"></div>
-            <div
-              class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"
-            ></div>
-            <div class="w-5/12 text-right">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                2. Enter Your Text
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Type or paste your message into the text field. The result will
-                appear instantly.
-              </p>
-            </div>
-          </div>
-
-          <!-- Timeline item (LEFT) -->
-          <div class="mb-10 flex justify-center items-center w-full">
-            <div class="w-5/12">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                3. Copy the Result
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Easily copy the output with just one click using the Copy
-                button.
-              </p>
-            </div>
-            <div
-              class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"
-            ></div>
-            <div class="w-5/12"></div>
-          </div>
-
-          <!-- Timeline item (RIGHT) -->
-          <div class="mb-10 flex justify-center items-center w-full">
-            <div class="w-5/12"></div>
-            <div
-              class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"
-            ></div>
-            <div class="w-5/12 text-right">
-              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                4. Share Securely
-              </h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                You're all set! Share your secret message with friends and enjoy
-                safe communication.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Encrypt section start -->
-    <section id="encrypt" class="pt-24 pb-24 encrypt-bg bg-green-50">
-      <div class="container max-w-6xl">
-        <div class="w-full px-4 lg:px-10 text-center">
-          <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
-            Encrypt Your Message Instantly
-          </h2>
-          <p class="text-secondary mb-5">
-            Enter your message below and encrypt it in just one click. Fast, easy, and secure—protect your words effortlessly.
-          </p>
-        </div>
-        <div
-          class="flex flex-col md:flex-row items-start gap-6 bg-white p-6 rounded-2xl shadow-lg"
-        >
-          <!-- Input Section -->
-          <div class="w-full md:w-1/2">
-            <h3
-              id="input-title"
-              class="text-lg font-semibold text-gray-800 mb-2"
-            >
-              Encrypt
-            </h3>
-            <textarea
-              id="input-text"
-              class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-gray-700"
-              rows="6"
-              placeholder="Enter your message..."
-            ></textarea>
-          </div>
-
-          <!-- Switch Button -->
-          <div class="flex self-center justify-center">
-            <button
-              id="switch-button"
-              class="bg-primary hover:bg-green-600 transition text-white p-4 rounded-full shadow-md"
-              title="Switch Mode"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                width="20"
-                height="20"
-                fill="currentColor"
-              >
-                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                <path
-                  d="M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96h160v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32v32H160C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96H192v-32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6v-32h160c88.4 0 160-71.6 160-160z"
-                />
+              <!-- Close Icon (X) -->
+              <svg id="icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
+        </div>
+      </div>
 
-          <!-- Output Section -->
-          <div class="w-full md:w-1/2">
-            <h3
-              id="output-title"
-              class="text-lg font-semibold text-gray-800 mb-2"
-            >
-              Encrypted Result
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="#home" class="block nav-link text-gray-700 hover:text-primary">Home</a>
+        <a href="#features" class="block nav-link text-gray-700 hover:text-primary">Features</a>
+        <a href="#works" class="block nav-link text-gray-700 hover:text-primary">How It Works</a>
+        <a href="#encrypt"
+          class="block text-white text-center py-1 px-4 bg-primary rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Encrypt
+          Now</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero section start -->
+  <section id="home" class="pt-24 custom-bg">
+    <div class="container max-w-6xl">
+      <div class="flex flex-wrap mb-4">
+        <div class="w-full self-center px-4 lg:w-1/2">
+          <h1 class="font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl">
+            Keep <span class="text-primary">Secure</span> Safe, Share
+            Confidently
+          </h1>
+
+          <p class="font-medium text-secondary mb-10 leading-relaxed">
+            Confidential messaging made simple. Trust our encryption for peace
+            of mind in every conversation. Encrypt it now!
+          </p>
+          <div class="flex flex-wrap">
+            <a href="#encrypt"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mr-2 mb-2">Encrypt
+              Now</a>
+            <a href="#about"
+              class="text-base font-semibold text-primary border-primary border py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-2">Read
+              more</a>
+          </div>
+        </div>
+        <div class="hidden lg:block self-end px-4 lg:w-1/2">
+          <div class="flex items-center">
+            <img src="src/img/hero.png" alt="hero image" class="mx-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero section end -->
+  <!-- About section start -->
+  <section id="about" class="pt-24 pb-24 about-bg">
+    <div class="container max-w-6xl">
+      <div class="flex flex-wrap">
+        <div class="px-4 mb-10 lg:w-1/2">
+          <div class="grid grid-cols-2 gap-4 items-center relative">
+            <div class="flex flex-col gap-4 relative">
+              <img src="src/img/shape-01.svg" alt="shape" class="absolute top-5 -left-5 w-6 md:w-9" />
+              <img src="src/img/ilustrasi2.jpeg" alt="about" class="w-full rounded-xl" />
+              <img src="src/img/ilustrasi3.jpeg" alt="about" class="w-full rounded-xl" />
+            </div>
+            <div class="flex flex-col relative">
+              <img src="src/img/ilustrasi1.jpeg" alt="about" class="w-full rounded-xl" />
+              <img src="src/img/shape-02.svg" alt="shape" class="absolute w-5 -top-12 md:w-10 md:-top-24" />
+            </div>
+            <img src="src/img/shape-03.svg" alt="shape" class="absolute w-20 right-4 bottom-0 md:right-15 md:w-1/3" />
+          </div>
+        </div>
+        <div class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2">
+          <h4 class="font-medium text-primary">About us</h4>
+          <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+            Make your message secrets here!
+          </h2>
+          <p class="text-secondary mb-5">
+            We provide a simple, secure way to encode and protect your
+            messages. Our platform ensures that your communications stay
+            private, making it easier for you to share information with
+            confidence, whether for fun or basic privacy.
+          </p>
+          <a href="javascript:void(0)" class="flex items-center" onclick="showModalTotorial()">
+            <span class="relative flex mr-5">
+              <span
+                class="p-3 animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
+              <span class="p-3 relative inline-flex rounded-full bg-primary">
+                <img src="src/img/icon-play.svg" alt="play" />
+              </span>
+            </span>
+            <span class="text-secondary font-medium">SEE THE TUTORIAL</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features section start -->
+  <section id="features" class="pt-24 pb-24 features-bg bg-green-50">
+    <div class="container max-w-6xl">
+      <div class="lg:flex flex-wrap">
+        <div class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2">
+          <h4 class="font-medium text-primary">Features</h4>
+          <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+            We Provide Amazing <span class="text-primary">Security</span> &
+            Simplicity
+          </h2>
+          <p class="text-secondary mb-5">
+            Experience powerful text encryption made simple. No login, no
+            complexity, just fast, secure communication at your fingertips.
+          </p>
+          <img src="./src/img/plane.svg" alt="shape-plane" class="w-1/2 ml-auto hidden lg:block" />
+        </div>
+
+        <!-- Features Grid -->
+        <div class="px-4 mb-10 lg:w-1/2">
+          <div class="grid grid-cols-2 gap-4 auto-rows-[minmax(100px,auto)]">
+            <!-- Card 1-->
+            <div class="col-span-2 bg-white p-6 rounded-xl shadow-md">
+              <div class="text-4xl mb-2">🔒</div>
+              <h3 class="text-lg font-semibold mb-1">Secure Encryption</h3>
+              <p class="text-secondary text-sm">
+                Protect your messages with simple encoding lightweight,
+                effective for basic privacy.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-5 rounded-xl shadow-md flex flex-col md:flex-row gap-3">
+              <div class="text-3xl">⚡</div>
+              <div>
+                <h3 class="font-semibold text-base mb-1">Fast & Instant</h3>
+                <p class="text-secondary text-sm">
+                  Real-time results, no hassle.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-5 rounded-xl shadow-md flex flex-col md:flex-row gap-3">
+              <div class="text-3xl">🔄</div>
+              <div>
+                <h3 class="font-semibold text-base mb-1">Two-Way</h3>
+                <p class="text-secondary text-sm">
+                  Encrypt and decrypt anytime.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-span-2 bg-white p-6 rounded-xl shadow-md flex flex-col md:flex-row gap-3">
+              <div class="text-3xl">🧩</div>
+              <div>
+                <h3 class="text-lg font-semibold mb-1">
+                  No Account Required
+                </h3>
+                <p class="text-secondary text-sm">
+                  No login needed, just start using it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- How it Works section start -->
+  <section id="works" class="pt-24 pb-24 works-bg">
+    <div class="container max-w-6xl">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 lg:px-10 text-center">
+          <h4 class="font-medium text-primary">How it Works</h4>
+          <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+            Easy and Secure Messaging
+          </h2>
+          <p class="text-secondary mb-5">
+            Follow a few easy steps to keep your messages private and
+            protected. No complicated setup, just a fast and secure way to
+            encode what matters to you.
+          </p>
+        </div>
+      </div>
+
+      <div class="container max-w-6xl relative">
+        <!-- vertical center line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-primary"></div>
+
+        <!-- Timeline item (LEFT) -->
+        <div class="mb-10 flex justify-center items-center w-full">
+          <div class="w-5/12">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              1. Choose Your Mode
             </h3>
-            <textarea
-              id="output-text"
-              class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-gray-700"
-              rows="6"
-              placeholder="Result will appear here..."
-              readonly
-            ></textarea>
-            <div class="flex items-center gap-2">
-              <button
-                onclick="copyText()"
-                class="mt-2 inline-flex items-center gap-2 bg-primary hover:bg-green-600 text-white text-sm font-medium py-2 px-4 rounded-lg transition"
-                title="Copy Text"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="14"
-                  height="14"
-                  fill="#fff"
-                >
-                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"
-                  />
-                </svg>
-                <span>Copy</span>
-              </button>
-              <p id="copied-message" class="text-gray-400 hidden">
-                Success copied
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Select whether you want to encrypt or decrypt your message, it's
+              quick and simple.
+            </p>
+          </div>
+          <div class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"></div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <!-- Timeline item (RIGHT) -->
+        <div class="mb-10 flex justify-center items-center w-full">
+          <div class="w-5/12"></div>
+          <div class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"></div>
+          <div class="w-5/12 text-right">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              2. Enter Your Text
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Type or paste your message into the text field. The result will
+              appear instantly.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline item (LEFT) -->
+        <div class="mb-10 flex justify-center items-center w-full">
+          <div class="w-5/12">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              3. Copy the Result
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Easily copy the output with just one click using the Copy
+              button.
+            </p>
+          </div>
+          <div class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"></div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <!-- Timeline item (RIGHT) -->
+        <div class="mb-10 flex justify-center items-center w-full">
+          <div class="w-5/12"></div>
+          <div class="relative z-10 w-8 h-8 bg-primary rounded-full border-4 border-white dark:border-gray-800"></div>
+          <div class="w-5/12 text-right">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+              4. Share Securely
+            </h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              You're all set! Share your secret message with friends and enjoy
+              safe communication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Encrypt section start -->
+  <section id="encrypt" class="pt-24 pb-24 encrypt-bg bg-green-50">
+    <div class="container max-w-6xl">
+      <div class="w-full px-4 lg:px-10 text-center">
+        <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+          Encrypt Your Message Instantly
+        </h2>
+        <p class="text-secondary mb-5">
+          Enter your message below and encrypt it in just one click. Fast,
+          easy, and secure, protect your words effortlessly.
+        </p>
+      </div>
+      <div class="flex flex-col md:flex-row items-start gap-6 bg-white p-6 rounded-2xl shadow-lg">
+        <!-- Input Section -->
+        <div class="w-full md:w-1/2">
+          <h3 id="input-title" class="text-lg font-semibold text-gray-800 mb-2">
+            Encrypt
+          </h3>
+          <textarea id="input-text"
+            class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-gray-700"
+            rows="6" placeholder="Enter your message..."></textarea>
+        </div>
+
+        <!-- Switch Button -->
+        <div class="flex self-center justify-center">
+          <button id="switch-button"
+            class="bg-primary hover:bg-green-600 transition text-white p-4 rounded-full shadow-md" title="Switch Mode">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="currentColor">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M0 224c0 17.7 14.3 32 32 32s32-14.3 32-32c0-53 43-96 96-96h160v32c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-9.2-9.2-22.9-11.9-34.9-6.9S320 19.1 320 32v32H160C71.6 64 0 135.6 0 224zm512 64c0-17.7-14.3-32-32-32s-32 14.3-32 32c0 53-43 96-96 96H192v-32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6v-32h160c88.4 0 160-71.6 160-160z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Output Section -->
+        <div class="w-full md:w-1/2">
+          <h3 id="output-title" class="text-lg font-semibold text-gray-800 mb-2">
+            Encrypted Result
+          </h3>
+          <textarea id="output-text"
+            class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary text-sm text-gray-700"
+            rows="6" placeholder="Result will appear here..." readonly></textarea>
+          <div class="flex items-center gap-2">
+            <button onclick="copyText()"
+              class="mt-2 inline-flex items-center gap-2 bg-primary hover:bg-green-600 text-white text-sm font-medium py-2 px-4 rounded-lg transition"
+              title="Copy Text">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" height="14" fill="#fff">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z" />
+              </svg>
+              <span>Copy</span>
+            </button>
+            <p id="copied-message" class="text-gray-400 hidden">
+              Success copied
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial section start -->
+  <section id="testimonial" class="pt-24 pb-24 testimonial-bg">
+    <div class="container max-w-6xl">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2 md:order-2">
+          <h4 class="font-medium text-primary">Testimonials</h4>
+          <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+            What Our Users Say About <span class="text-primary">Encryptify</span>
+          </h2>
+          <p class="text-secondary mb-5">
+            Stories from people who use Encryptify to share their secret messages safely and easily with friends.
+          </p>
+        </div>
+        <div class="px-4 mb-10 lg:w-1/2 md:order-1">
+          <div class="grid grid-cols-3 grid-rows-2 gap-4">
+            <div
+              class="col-span-2 p-5 flex flex-col md:flex-row items-center gap-4 text-white text-xl rounded-lg shadow-md">
+              <img src="./src/img/profile-1.svg" alt="people" class="rounded-full w-16 h-2w-16">
+              <div>
+                <h3 class="text-gray-700 text-lg font-semibold mb-1">
+                  So Easy and Fun!
+                </h3>
+                <p class="italic text-secondary text-base mt-1">
+                  Encrypting messages is a breeze! It’s fun, fast, and feels secure.
+                </p>
+                <p class="text-secondary text-sm mt-1">
+                  Thomas
+                </p>
+              </div>
+            </div>
+            <img src="./src/img/shape-03.svg" alt="shape" class="col-span-1 self-end">
+            <img src="./src/img/shape-02.svg" alt="shape" class="col-span-1 self-center h-full">
+
+            <div
+              class="col-span-2 p-5 flex flex-col md:flex-row items-center gap-4 text-white text-xl rounded-lg shadow-md">
+              <img src="./src/img/profile-2.svg" alt="people" class="rounded-full w-16 h-2w-16">
+              <div>
+                <h3 class="text-gray-700 text-lg font-semibold mb-1">
+                  Privacy Made Simple
+                </h3>
+                <p class="italic text-secondary text-base mt-1">
+                  I can send secret messages in seconds, and it’s so easy!
+                </p>
+                <p class="text-secondary text-sm mt-1">
+                  Monica
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section Start -->
+<section id="contact" class="pt-24 pb-24 bg-green-50">
+  <div class="container max-w-6xl">
+    <div class="lg:flex flex-wrap">
+      <div class="w-full px-4 flex flex-col justify-center lg:px-10 lg:w-1/2">
+        <h4 class="font-medium text-primary">Contact</h4>
+        <h2 class="font-bold text-dark mb-5 text-3xl mt-1 lg:text-4xl">
+          Get in Touch or Contribute!
+        </h2>
+        <p class="text-secondary mb-5">
+          Have questions, ideas, or just want to say hi? Reach out to me! You can also check out and contribute to the project on GitHub.
+        </p>
+      </div>
+
+      <div class="px-4 mb-10 lg:w-1/2">
+        <div class="grid grid-cols-2 gap-4 auto-rows-[minmax(100px,auto)]">
+          <!-- Contact -->
+          <div class="col-span-2 bg-white p-6 rounded-xl shadow-md flex items-center flex-col md:flex-row gap-3">
+            <div class="text-4xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Contact</h3>
+              <p class="text-secondary text-sm">
+                Search me at <a href="https://www.linkedin.com/in/mangbudiarta/" class="text-primary underline">Linkedin</a> for anything you need!
+              </p>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="col-span-2 bg-white p-6 rounded-xl shadow-md flex items-center flex-col md:flex-row gap-3">
+            <div class="text-4xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="32" height="32"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></div>
+            <div>
+              <h3 class="text-lg font-semibold mb-1">Visit GitHub</h3>
+              <p class="text-secondary text-sm">
+                Check out the project on <a href="https://github.com/mangbudiarta/encryptify-website" class="text-primary underline" target="_blank">GitHub</a> and feel free to contribute!
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Modal -->
-    <div
-      id="modalTotorial"
-      class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50"
-    >
-      <div
-        class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-xl mx-4 relative"
-      >
-        <!-- Video -->
-        <div class="aspect-video w-full rounded-xl overflow-hidden">
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/Iqr3XIhSnUQ?si=czIdjldg9TFDKFOu"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
+<!-- Footer Start -->
+<footer class="bg-primary py-6 text-white">
+  <div class="container max-w-6xl mx-auto px-4 text-center">
+    <p class="text-sm">
+      &copy; 2025 Encryptify. Made with ❤️ for privacy and fun.
+    </p>
+    <div class="mt-3">
+      <a href="https://github.com/mangbudiarta/" target="_blank" class="underline text-sm">
+        GitHub
+      </a>
+      |
+      <a href="https://www.linkedin.com/in/mangbudiarta/" class="underline text-sm">
+        Linkedin
+      </a>
+    </div>
+  </div>
+</footer>
 
-        <!-- Tombol tutup biasa -->
-        <div class="text-right mt-4">
-          <button
-            onclick="closeModalTotorial()"
-            class="rounded-full bg-gray-200 text-gray-700 px-4 py-2 hover:bg-gray-300"
-          >
-            Tutup
-          </button>
-        </div>
+  <!-- Modal -->
+  <div id="modalTotorial" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-xl mx-4 relative">
+      <!-- Video -->
+      <div class="aspect-video w-full rounded-xl overflow-hidden">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/Iqr3XIhSnUQ?si=czIdjldg9TFDKFOu"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <!-- Tombol tutup biasa -->
+      <div class="text-right mt-4">
+        <button onclick="closeModalTotorial()"
+          class="rounded-full bg-gray-200 text-gray-700 px-4 py-2 hover:bg-gray-300">
+          Tutup
+        </button>
       </div>
     </div>
-    <!-- To Top Page -->
-    <a
-      href="#home"
-      class="bg-primary p-2 fixed right-2 bottom-2 rounded-full hidden"
-      id="to-top-button"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 384 512"
-        width="14"
-        height="14"
-        fill="#fff"
-      >
-        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-        <path
-          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-        />
-      </svg>
-    </a>
-    <script src="src/script.js"></script>
-  </body>
+  </div>
+  <!-- To Top Page -->
+  <a href="#home"
+    class="border-2 border-gray-500 bg-transparent text-gray-500 hover:bg-green-500 hover:text-white hover:border-primary transition duration-300 ease-in-out p-3 fixed right-3 bottom-3 rounded-full hidden"
+    id="to-top-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="14" height="14" fill="currentColor">
+      <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+    </svg>
+  </a>
+  <script src="src/script.js"></script>
+</body>
+
 </html>
