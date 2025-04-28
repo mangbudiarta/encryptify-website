@@ -758,10 +758,6 @@ video {
   height: 100%;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1006,102 +1002,6 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-\[url\(\'\/src\/img\/wave-01\.svg\'\)\] {
-  background-image: url('/src/img/wave-01.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-02\.svg\'\)\] {
-  background-image: url('/src/img/wave-02.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-03\.svg\'\)\] {
-  background-image: url('/src/img/wave-03.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-04\.svg\'\)\] {
-  background-image: url('/src/img/wave-04.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-05\.svg\'\)\] {
-  background-image: url('/src/img/wave-05.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-06\.svg\'\)\] {
-  background-image: url('/src/img/wave-06.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-01\.svg\'\)\] {
-  background-image: url('src/img/wave-01.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-02\.svg\'\)\] {
-  background-image: url('src/img/wave-02.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-03\.svg\'\)\] {
-  background-image: url('src/img/wave-03.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-04\.svg\'\)\] {
-  background-image: url('src/img/wave-04.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-05\.svg\'\)\] {
-  background-image: url('src/img/wave-05.svg');
-}
-
-.bg-\[url\(\'src\/img\/wave-06\.svg\'\)\] {
-  background-image: url('src/img/wave-06.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-01\.svg\'\)\] {
-  background-image: url('./src/img/wave-01.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-02\.svg\'\)\] {
-  background-image: url('./src/img/wave-02.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-03\.svg\'\)\] {
-  background-image: url('./src/img/wave-03.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-04\.svg\'\)\] {
-  background-image: url('./src/img/wave-04.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-05\.svg\'\)\] {
-  background-image: url('./src/img/wave-05.svg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/wave-06\.svg\'\)\] {
-  background-image: url('./src/img/wave-06.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-06\.svg\'\)\] {
-  background-image: url('/img/wave-06.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-01\.svg\'\)\] {
-  background-image: url('/img/wave-01.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-02\.svg\'\)\] {
-  background-image: url('/img/wave-02.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-03\.svg\'\)\] {
-  background-image: url('/img/wave-03.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-04\.svg\'\)\] {
-  background-image: url('/img/wave-04.svg');
-}
-
-.bg-\[url\(\'\/img\/wave-05\.svg\'\)\] {
-  background-image: url('/img/wave-05.svg');
 }
 
 .bg-\[url\(\'\.\/img\/wave-01\.svg\'\)\] {
