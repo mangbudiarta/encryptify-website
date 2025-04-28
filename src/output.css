@@ -1104,6 +1104,30 @@ video {
   background-image: url('/img/wave-05.svg');
 }
 
+.bg-\[url\(\'\.\/img\/wave-01\.svg\'\)\] {
+  background-image: url('./img/wave-01.svg');
+}
+
+.bg-\[url\(\'\.\/img\/wave-02\.svg\'\)\] {
+  background-image: url('./img/wave-02.svg');
+}
+
+.bg-\[url\(\'\.\/img\/wave-03\.svg\'\)\] {
+  background-image: url('./img/wave-03.svg');
+}
+
+.bg-\[url\(\'\.\/img\/wave-04\.svg\'\)\] {
+  background-image: url('./img/wave-04.svg');
+}
+
+.bg-\[url\(\'\.\/img\/wave-05\.svg\'\)\] {
+  background-image: url('./img/wave-05.svg');
+}
+
+.bg-\[url\(\'\.\/img\/wave-06\.svg\'\)\] {
+  background-image: url('./img/wave-06.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
