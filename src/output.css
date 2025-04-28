@@ -758,6 +758,10 @@ video {
   height: 100%;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1028,32 +1032,16 @@ video {
   background-image: url('/src/img/wave-06.svg');
 }
 
-.bg-\[url\(\'\/img\/wave-06\.svg\'\)\] {
-  background-image: url('/img/wave-06.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-07\.svg\'\)\] {
-  background-image: url('/src/img/wave-07.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-041\.svg\'\)\] {
-  background-image: url('/src/img/wave-041.svg');
-}
-
-.bg-\[url\(\'\/src\/img\/wave-41\.svg\'\)\] {
-  background-image: url('/src/img/wave-41.svg');
-}
-
 .bg-cover {
   background-size: cover;
 }
 
-.bg-top {
-  background-position: top;
-}
-
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -1109,11 +1097,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pb-24 {
@@ -1176,6 +1159,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .italic {

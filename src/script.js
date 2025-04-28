@@ -18,13 +18,13 @@ toggleButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-function showModalTotorial() {
-  document.getElementById("modalTotorial").classList.add("flex");
-  document.getElementById("modalTotorial").classList.remove("hidden");
+function showModalAbout() {
+  document.getElementById("modalAbout").classList.add("flex");
+  document.getElementById("modalAbout").classList.remove("hidden");
 }
 
-function closeModalTotorial() {
-  document.getElementById("modalTotorial").classList.add("hidden");
+function closeModalAbout() {
+  document.getElementById("modalAbout").classList.add("hidden");
 }
 
 // navbar scroll
