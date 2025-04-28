@@ -1056,6 +1056,30 @@ video {
   background-image: url('src/img/wave-06.svg');
 }
 
+.bg-\[url\(\'\.\/src\/img\/wave-01\.svg\'\)\] {
+  background-image: url('./src/img/wave-01.svg');
+}
+
+.bg-\[url\(\'\.\/src\/img\/wave-02\.svg\'\)\] {
+  background-image: url('./src/img/wave-02.svg');
+}
+
+.bg-\[url\(\'\.\/src\/img\/wave-03\.svg\'\)\] {
+  background-image: url('./src/img/wave-03.svg');
+}
+
+.bg-\[url\(\'\.\/src\/img\/wave-04\.svg\'\)\] {
+  background-image: url('./src/img/wave-04.svg');
+}
+
+.bg-\[url\(\'\.\/src\/img\/wave-05\.svg\'\)\] {
+  background-image: url('./src/img/wave-05.svg');
+}
+
+.bg-\[url\(\'\.\/src\/img\/wave-06\.svg\'\)\] {
+  background-image: url('./src/img/wave-06.svg');
+}
+
 .bg-cover {
   background-size: cover;
 }
